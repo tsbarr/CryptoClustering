@@ -32,7 +32,7 @@ Notebook: [Crypto_Clustering.ipynb](Crypto_Clustering.ipynb)
 
     ![The first five rows of the scaled DataFrame](https://static.bc-edx.com/data/dl-1-2/m19/lms/img/scaled_DataFrame.png)
 
-## Find the Best Value for k Using the Original Scaled DataFrame
+### Find the Best Value for k Using the Original Scaled DataFrame
 
 Use the elbow method to find the best value for `k` using the following steps:
 
@@ -48,7 +48,7 @@ Use the elbow method to find the best value for `k` using the following steps:
 
 - Answer the following question in your notebook: What is the best value for `k`?
 
-## Cluster Cryptocurrencies with K-means Using the Original Scaled Data
+### Cluster Cryptocurrencies with K-means Using the Original Scaled Data
 
 Use the following steps to cluster the cryptocurrencies for the best value for `k` on the original scaled data:
 
@@ -68,7 +68,7 @@ Use the following steps to cluster the cryptocurrencies for the best value for `
 
     - Add the "coin_id" column in the `hover_cols` parameter to identify the cryptocurrency represented by each data point.
 
-## Optimize Clusters with Principal Component Analysis
+### Optimize Clusters with Principal Component Analysis
 
 - Using the original scaled DataFrame, perform a PCA and reduce the features to three principal components.
 
@@ -82,7 +82,7 @@ Use the following steps to cluster the cryptocurrencies for the best value for `
 
     ![The first five rows of the PCA DataFrame](https://static.bc-edx.com/data/dl-1-2/m19/lms/img/PCA_DataFrame.png)
 
-## Find the Best Value for k Using the PCA Data
+### Find the Best Value for k Using the PCA Data
 
 Use the elbow method on the PCA data to find the best value for k using the following steps:
 
@@ -102,7 +102,7 @@ Use the elbow method on the PCA data to find the best value for k using the foll
     
     - Does it differ from the best k value found using the original data?
 
-## Cluster Cryptocurrencies with K-means Using the PCA Data
+### Cluster Cryptocurrencies with K-means Using the PCA Data
 
 Use the following steps to cluster the cryptocurrencies for the best value for k on the PCA data:
 

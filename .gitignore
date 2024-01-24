@@ -177,6 +177,6 @@ api_keys.py
 # vs code
 .vscode
 
-# .csv files are too big for this project so we ignore them
-*.csv
+# if .csv files are too big:
+# *.csv
 ############

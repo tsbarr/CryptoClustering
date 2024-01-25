@@ -8,46 +8,51 @@ This repo contains my work for the challenge that corresponds to Module 19 of th
 
 ---
 
-## Deliverables
+## Deliverable
 
 Notebook: [Crypto_Clustering.ipynb](Crypto_Clustering.ipynb)
 
 ---
 
-## Instructions
+## Results
 
-1. Intial data description and visualization
-2. Data scaling
-3. Using Elbow Plot to find optiomal k value
-4. Cluster Analysis with K-Means
-5. PCA
-6. Repeat 3 and 4 but with PCs
+### Elbow Plot to find optiomal k value using Scaled Original Data
 
+![Elbow Plot to find optiomal k value using Scaled Original Data](Results/elbow_og.png)
 
-Question: What is the best value for k?
+**Question:** What is the best value for k?
 
-Answer: From the plot, I would guess 4, since that is the point where the slope stabilizes and starts dropping more steadily.
+**Answer:** From the plot, I would guess 4, since that is the point where the slope stabilizes and starts dropping more steadily.
 
-Question: What is the total explained variance of the three principal components?
+### PCA
 
-Answer: The total is 89.5%. Each principal component individually explains 37.2%, 34.7% and 17.6%.
+**Question:** What is the total explained variance of the three principal components?
 
-Question: What is the best value for k when using the PCA data?
+**Answer:** The total is 89.5%. Each principal component individually explains 37.2%, 34.7% and 17.6%.
 
-Answer: It seems to be 4, since that is where the elbow curve starts having a smooth slope.
+### Elbow Plot to find optiomal k value using PCA Data
 
-Question: Does it differ from the best k value found using the original data?
+![Elbow Plot to find optiomal k value using PCA Data](Results/elbow_pca.png)
 
-Answer: No, that is the same value I chose previously
+**Question:** What is the best value for k when using the PCA data?
 
-Question: What is the best value for k when using the PCA data?
+**Answer:** It seems to be 4, since that is where the elbow curve starts having a smooth slope.
 
-Answer: It seems to be 4, since that is where the elbow curve starts having a smooth slope.
-Question: Does it differ from the best k value found using the original data?
+**Question:** Does it differ from the best k value found using the original data?
 
-Answer: No, that is the same value I chose previously
+**Answer:** No, that is the same value I chose previously
 
+### Cluster Analyses with K-Means using Scaled Original Data and using PCA Data
 
+![Cluster Analysis with K-Means using Scaled Original Data and using PCA Data](Results/cluster_both.png)
+
+**Question:** After visually analyzing the cluster analysis results, what is the impact of using fewer features to cluster the data using K-Means?
+
+**Answer:** Using the reduced features we obtained through PCA allows us to clearly isolate the different clusters in the visualizations. 
+We can better see how the variance in the features used to cluster influenced the groupings. 
+Although it is not clear how the features obtained from the PCA are related to the original features, 
+if we wish to explore the underlying causes of the clustering, 
+we can perform further visualizations with the clusters generated with the principal components and the original features.
 
 ---
 
